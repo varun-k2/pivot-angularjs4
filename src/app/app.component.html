@@ -1,0 +1,9 @@
+<h1>AngularJS 4/Flexmonster</h1>
+<fm-pivot [componentFolder]="'https://s3.amazonaws.com/flexmonster/2.3/'"
+		  [toolbar]="true"
+          [width]="'100%'"
+          [height]="500"
+          [report]="'https://s3.amazonaws.com/flexmonster/2.3/reports/report.json'"
+          (ready)="onPivotReady($event)">
+    Flexmonster will appear here
+</fm-pivot>
