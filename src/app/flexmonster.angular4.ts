@@ -61,6 +61,7 @@ export class FlexmonsterPivot {
             toolbar: this.toolbar,
             licenseKey: this.licenseKey,
             report: this.report,
+            global: this.global,
             cellclick: (cell: Flexmonster.Cell) => this.cellclick.next(cell),
             celldoubleclick: (cell: Flexmonster.Cell) => this.celldoubleclick.next(cell),
             dataerror: (event: Object) => this.dataerror.next(event),
