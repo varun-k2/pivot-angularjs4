@@ -43,6 +43,7 @@ export class FlexmonsterPivot {
     @Output() reportfileloaded: EventEmitter<Object> = new EventEmitter();
     @Output() runningquery: EventEmitter<Object> = new EventEmitter();
     @Output() update: EventEmitter<Object> = new EventEmitter();
+    @Output() beforetoolbarcreated: EventEmitter<Object> = new EventEmitter();
     // api
     public flexmonster: Flexmonster.Pivot;
     // private
@@ -90,7 +91,8 @@ export class FlexmonsterPivot {
             reportfileerror: (event: Object) => this.reportfileerror.next(event),
             reportfileloaded: (event: Object) => this.reportfileloaded.next(event),
             runningquery: (event: Object) => this.runningquery.next(event),
-            update: (event: Object) => this.update.next(event)
+            update: (event: Object) => this.update.next(event),
+            beforetoolbarcreated: (event: Object) => this.beforetoolbarcreated.next(event)
         });
     }
 }
