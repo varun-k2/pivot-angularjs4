@@ -82,7 +82,8 @@ var FlexmonsterPivot = (function () {
             reportfileerror: function (event) { return _this.reportfileerror.next(event); },
             reportfileloaded: function (event) { return _this.reportfileloaded.next(event); },
             runningquery: function (event) { return _this.runningquery.next(event); },
-            update: function (event) { return _this.update.next(event); }
+            update: function (event) { return _this.update.next(event); },
+            beforetoolbarcreated: function (event) { return _this.beforetoolbarcreated.next(event); }
         });
     };
     return FlexmonsterPivot;
@@ -231,6 +232,10 @@ __decorate([
     core_1.Output(),
     __metadata("design:type", core_1.EventEmitter)
 ], FlexmonsterPivot.prototype, "update", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", core_1.EventEmitter)
+], FlexmonsterPivot.prototype, "beforetoolbarcreated", void 0);
 FlexmonsterPivot = __decorate([
     core_1.Component({
         selector: "fm-pivot",
